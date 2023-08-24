@@ -18,7 +18,7 @@
 }
 
 body {
-  background-color: #FFFBEB;
+  background-color: #fffbeb;
   min-width: 375px;
 }
 
@@ -35,21 +35,22 @@ main div {
   justify-content: space-between;
   align-items: center;
   text-align: center;
+  padding: 1rem;
 }
 
 h1#logo-title {
   font-family: "dmSerifDisplay";
-  color: #2E6B50;
-  font-size: 8.4rem;
+  color: #2e6b50;
+  font-size: 7.2rem;
   position: relative;
   font-weight: 400;
-  line-height: 8.4rem;
+  line-height: 7.2rem;
 }
 
 h5 {
   font-family: "recoleta";
-  color: #2E6B50;
-  font-size: 3.6rem;
+  color: #2e6b50;
+  font-size: 2.4rem;
   font-weight: 300;
 }
 
@@ -62,6 +63,16 @@ h5 {
   position: relative;
   top: 80%;
   font-weight: 300;
+}
+
+@media (min-width: 600px) {
+  h1#logo-title {
+    font-size: 8.4rem;
+    line-height: 8.4rem;
+  }
+  h5 {
+    font-size: 3.6rem;
+  }
 }
 
 /*# sourceMappingURL=styles.css.map */

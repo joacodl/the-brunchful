@@ -1,78 +1,91 @@
 // Colores
-$crema: #FFFBEB;
-$verde_oscuro: #1B4332;
-$verde_claro: #2E6B50;
+$crema: #fffbeb;
+$verde_oscuro: #1b4332;
+$verde_claro: #2e6b50;
 $negro: #000000;
 
 @font-face {
-    font-family: 'recoleta';
-    src: url('/src/assets/fuentes/recoleta/Recoleta-RegularDEMO.otf')format('opentype');
-    font-weight: 300;
+  font-family: "recoleta";
+  src: url("/src/assets/fuentes/recoleta/Recoleta-RegularDEMO.otf")
+    format("opentype");
+  font-weight: 300;
 }
 
 @font-face {
-    font-family: helvetica_lt;
-    src: url('/src/assets/fuentes/Helvetica_LT_Std_Light/Helvetica_LT_Std_Light.otf');
+  font-family: helvetica_lt;
+  src: url("/src/assets/fuentes/Helvetica_LT_Std_Light/Helvetica_LT_Std_Light.otf");
 }
 
 @font-face {
-    font-family: 'dmSerifDisplay';
-    src: url('/src/assets/fuentes/DM_Serif_Display/DMSerifDisplay-Regular.ttf')format('truetype');
+  font-family: "dmSerifDisplay";
+  src: url("/src/assets/fuentes/DM_Serif_Display/DMSerifDisplay-Regular.ttf")
+    format("truetype");
 }
 
 * {
-    box-sizing: border-box;
-    margin: 0;
-    font-size: 62.5%;
+  box-sizing: border-box;
+  margin: 0;
+  font-size: 62.5%;
 }
 
-
 body {
-    background-color: $crema;
-    min-width: 375px;
+  background-color: $crema;
+  min-width: 375px;
 }
 
 main {
-    height: 100vh;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 main div {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    align-items: center;
-    text-align: center;
-    // gap: .5rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  text-align: center;
+  padding: 1rem;
 }
 
 h1#logo-title {
-    font-family: "dmSerifDisplay";
-    color: $verde_claro;
-    font-size: 8.4rem;
-    position: relative;
-    // bottom: 2.75rem;
-    font-weight: 400;
-    line-height: 8.4rem;
+  font-family: "dmSerifDisplay";
+  color: $verde_claro;
+  font-size: 7.2rem;
+  position: relative;
+  font-weight: 400;
+  line-height: 7.2rem;
 }
 
 h5 {
-    font-family: 'recoleta';
-    color: $verde_claro;
-    font-size: 3.6rem;
-    font-weight: 300;
+  font-family: "recoleta";
+  color: $verde_claro;
+  font-size: 2.4rem;
+  font-weight: 300;
 }
 
 .message-container {
-    position: absolute;
-    height: 100vh;
+  position: absolute;
+  height: 100vh;
 }
 
 #message {
-    // padding-top: 8rem;
-    position: relative;
-    top: 80%;
-    font-weight: 300;
+  // padding-top: 8rem;
+  position: relative;
+  top: 80%;
+  font-weight: 300;
+}
+
+// Bigger Viewports
+
+@media (min-width: 600px) {
+  h1#logo-title {
+    font-size: 8.4rem;
+    line-height: 8.4rem;
+  }
+
+  h5 {
+    font-size: 3.6rem;
+  }
 }
