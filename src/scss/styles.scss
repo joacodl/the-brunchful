@@ -49,7 +49,7 @@ main div {
   padding: 1rem;
 }
 
-h1#logo-title {
+h1 {
   font-family: "dmSerifDisplay";
   color: $verde_claro;
   font-size: 7.2rem;
@@ -80,7 +80,7 @@ h5 {
 // Bigger Viewports
 
 @media (min-width: 600px) {
-  h1#logo-title {
+  h1 {
     font-size: 8.4rem;
     line-height: 8.4rem;
   }
